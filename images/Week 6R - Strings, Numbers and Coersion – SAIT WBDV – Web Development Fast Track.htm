@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://sait-wbdv.github.io/cpnt262/numbers-strings-coersion/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Week 6R - Strings, Numbers and Coersion – SAIT WBDV – Web Development Fast Track</title>
+
+        
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    
+    <meta name="description" content="Housekeeping
+
+  260 Assignment 3 Feeback Key (so far)
+
+
+">
+    <meta property="og:description" content="Housekeeping
+
+  260 Assignment 3 Feeback Key (so far)
+
+
+">
+    
+    <meta name="author" content="SAIT WBDV">
+
+    
+    <meta property="og:title" content="Week 6R - Strings, Numbers and Coersion">
+    <meta property="twitter:title" content="Week 6R - Strings, Numbers and Coersion">
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="./Week 6R - Strings, Numbers and Coersion – SAIT WBDV – Web Development Fast Track_files/style.css">
+    <link rel="alternate" type="application/rss+xml" title="SAIT WBDV - Web Development Fast Track" href="https://sait-wbdv.github.io/feed.xml">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="https://sait-wbdv.github.io/" class="site-avatar"><img src="./Week 6R - Strings, Numbers and Coersion – SAIT WBDV – Web Development Fast Track_files/sait-logo.png"></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="https://sait-wbdv.github.io/">SAIT WBDV</a></h1>
+            <p class="site-description">Web Development Fast Track</p>
+          </div>
+
+          <nav>
+            <a href="https://sait-wbdv.github.io/cpnt262/numbers-strings-coersion">Today</a>
+            <a href="https://sait-wbdv.github.io/zoom">Zoom</a>
+<!-- TODO: redirect path to home page 
+            <a href="/schedule">Schedule</a>
+-->
+            <a href="https://sait-wbdv.github.io/library">Library</a>
+            <a href="https://learn.sait.ca/" target="_blank">Brightspace</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Week 6R - Strings, Numbers and Coersion</h1>
+  <div class="date">
+    October 15, 2020
+  </div>
+
+  <div class="entry">
+    <h2 id="housekeeping">Housekeeping</h2>
+<ul>
+  <li><a href="https://github.com/sait-wbdv/assessments/blob/master/cpnt260/assignment-3/feedback-key.md">260 Assignment 3 Feeback Key</a> (so far)</li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+<ol>
+  <li>Numbers and Strings:
+    <ul>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math">Basic math in JavaScript — numbers and operators</a></li>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings">Handling text - strings in Javascript</a></li>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">Useful string methods</a></li>
+      <li>Watch: <a href="https://youtu.be/09BwruU4kiY">JavaScript Strings</a> by Mosh</li>
+      <li>Watch: <a href="https://youtu.be/VRz0nbax0uI">20 String Methods in 7 Minutes</a> by Free Code Camp</li>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">Template literals</a> on MDN</li>
+    </ul>
+  </li>
+  <li>Coersion and Sameness
+    <ul>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean values</a> on MDN</li>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion">Type coercion</a> on MDN</li>
+      <li>Read: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality comparisons and sameness</a></li>
+      <li>Watch: <a href="https://youtu.be/mat1O5JI2fg">JS Type Casting, Converting, and Coercion</a> by Steve Griffith</li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+<h2 id="terminology">Terminology</h2>
+<dl>
+  <dt>Dynamic Types</dt>
+  <dd>You don't tell the engine what type of data a variable holds. It figures it out while your code is running.</dd>
+  <dt>Coercion</dt>
+  <dd>Converting a value from one type to another.</dd>
+  <dt>Expression</dt>
+  <dd>A line of code that returns a value.</dd>
+  <dt>Operator</dt>
+  <dd>A special function that usually takes two arguments (operands) from either side of the operator (infix notation).
+    <dl>
+      <dt>Comparison Operator</dt>
+      <dd>Compares its operands and returns a boolean value based on whether the comparison is true or false.</dd>
+      <dt>Arithmetic Operator</dt>
+      <dd>Takes numerical values (either literals or variables) as their operands and returns a single numerical value.</dd>
+    </dl>
+  </dd>
+  <dt>Equal</dt>
+  <dd>Where two values are "equal" but the value types are not compared.</dd>
+  <dt>Identical</dt>
+  <dd>Where two values are equal AND the value types are also identical.</dd>
+  <dt>Concatenation</dt>
+  <dd>Joining two or more strings into one.</dd>
+  <dt>Template Literal</dt>
+  <dd>The ES6 method of concatenation, replacing the need for using the `+` operator on strings.</dd>
+</dl>
+
+<hr>
+
+<h2 id="1-coersion-and-sameness">1. Coersion and Sameness</h2>
+<p>Live Demo: Comparison operators and coersion</p>
+
+<p>See: <a href="https://gist.github.com/prof3ssorSt3v3/253a945ce2bed2b92805d4e43b5a7614">Casting Sample Code</a> by Steve Griffith in <a href="https://youtu.be/mat1O5JI2fg">JS Type Casting, Converting, and Coercion</a></p>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">===</code> instead of <code class="language-plaintext highlighter-rouge">==</code> whenever possible (or until you understand the difference).</li>
+  <li>Avoid chaining comparison operators for 3 or more operands.</li>
+  <li><code class="language-plaintext highlighter-rouge">NaN</code> and another <code class="language-plaintext highlighter-rouge">NaN</code> are never equal.</li>
+</ul>
+
+<hr>
+
+<h2 id="2-string-methods">2. String methods</h2>
+<p><strong>Sample Code</strong>: <a href="https://github.com/sait-wbdv/sample-code/tree/master/js-base/strings/string-methods.js">String methods</a>, copied from <a href="https://youtu.be/VRz0nbax0uI">20 String Methods in 7 Minutes</a> by Free Code Camp</p>
+
+<hr>
+
+<h2 id="3-arithmetic-operators-and-concatenation">3. Arithmetic operators and concatenation</h2>
+<p>Live Demo: Adding text content to a page using the DOM.</p>
+
+<p>See: <a href="https://github.com/sait-wbdv/sample-code/tree/master/frontend/form-name-food/">Food form starter code</a></p>
+
+<hr>
+
+<h2 id="activities">Activities</h2>
+<ol>
+  <li>MDN: Test your skills:
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Strings">Strings</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math">Math</a></li>
+    </ul>
+  </li>
+  <li>You Don’t Know JS Exercises: <a href="https://ydkjs-exercises.com/types-grammar/ch4/q1">Types and Grammar</a></li>
+  <li>Free Code Camp: Starting at <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript">Adding two numbers</a> complete lessons 8-36 of the Free Code Camp <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">Basic Javascript</a> course. You can stop at <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays">Store Multiple Values in one Variable using JavaScript Arrays</a>.</li>
+</ol>
+
+<hr>
+
+<h2 id="clean-up-time">Clean-up Time!</h2>
+<ul>
+  <li><a href="https://sait-wbdv.github.io/cpnt262/forms-expressions-conditionals/">Tomorrow</a></li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/sait-wbdv"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  
+
+</body></html>
